@@ -76,12 +76,12 @@ initApp();
 //     }
 //     reloadCard();
 // }
-function addToCart(key) { // Corrected function name
+function addToCart(key) { 
     if (listCards[key] == null) {
         listCards[key] = products[key];
         listCards[key].quantity = 1;
     } else {
-        listCards[key].quantity += 1; // Increment quantity for existing product
+        listCards[key].quantity += 1; 
     }
     reloadCard();
 }
